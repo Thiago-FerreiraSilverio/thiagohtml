@@ -1,5 +1,5 @@
 .header {
-    background-color: #F1F1F1;
+    background-color: darkgoldenrod;
     text-align: center;
     padding: 20px;
     width: 100%;
@@ -7,7 +7,7 @@
 
   .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: darkred;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -31,7 +31,8 @@
     float: left;
     width: 33.33%;
     margin: 10px;
-    background-color: darkslategrey;
+    background-color: khaki;
+    border-radius: 13%;
   }
 
   .row:after {
