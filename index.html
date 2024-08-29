@@ -1,0 +1,82 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        margin: 0;
+        }
+
+               
+        .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+        }
+
+
+        .row::after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+       
+        @media screen and (max-width:600px) {
+        .column {
+            width: 100%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Catalago</h1>
+    </div>  
+
+<div class="topnav">
+    <a href="index.html">Catalago</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="quemsomos.html">Quem nos somos</a>
+</div>
+<div class="content">
+    <div class="column">
+        <div class="product">
+            <img src="./img/churrasco.jpg" width="300px">
+            <p>Combo Churrasco</p>
+            <spam>Descrição: 5 Peças de Picanha, Contra File, Alcatra e Acém</spam>
+            <p>Valor: 50R$</p>
+            <button style="background-color: darkred;color: aliceblue;">Comprar</button>
+        </div>
+    </div>
+    <div class="column">
+        <div class="product">
+            <img src="./img/Lanche.png" width="347px">
+            <p>Combo Lanche</p>
+            <spam>Descrição: 4 Hamburgers, 1Kg Batata Frita e Coca-Cola 2L</spam>
+            <p>Valor: 75R$</p>
+            <button style="background-color: darkred;color: aliceblue;">Comprar</button>
+        </div>
+    </div>
+    <div class="column">
+        <div class="product">
+            <img src="./img/sushi.jpg" width="155px">
+            <p>Barca Media</p>
+            <spam>Descrição:10 Peças de Hot Roll, Hot filadélfia, Nigiri, Uramaki e Hossomaki </spam>
+            <p>Valor: 100R$</p>
+            <button style="background-color: darkred;color: aliceblue;">Comprar</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
