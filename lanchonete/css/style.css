@@ -2,7 +2,7 @@
     background-color: darkgoldenrod;
     text-align: center;
     padding: 20px;
-    width: 100%;
+    
   }
 
   .topnav {
@@ -11,6 +11,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    width: 100;
   }
 
   .topnav a {
@@ -32,7 +33,7 @@
     width: 33.33%;
     margin: 10px;
     background-color: khaki;
-    border-radius: 13%;
+    border-radius: 5;
   }
 
   .row:after {
