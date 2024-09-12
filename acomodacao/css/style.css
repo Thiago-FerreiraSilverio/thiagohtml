@@ -1,0 +1,58 @@
+/* Estilos para as diferentes classes de acomodação */
+.nivel-executiva {
+    background-color: #87CEEB; /* Cor de fundo para classe executiva */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.nivel-premium {
+    background-color: #FFD700; /* Cor de fundo para classe premium */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.nivel-luxo {
+    background-color: #8B0000; /* Cor de fundo para classe luxo */
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Cores dos títulos para combinar com as seções */
+.titulo-executiva {
+    color: #104E8B; /* Azul mais escuro para contraste com fundo azul claro */
+}
+
+.titulo-premium {
+    color: #B8860B; /* Marrom escuro para combinar com o dourado */
+}
+
+.titulo-luxo {
+    color: #FFA07A; /* Laranja suave para contrastar com o fundo vermelho */
+}
+
+/* Ajustes de espaçamento e estilo */
+.box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: white; /* Fundo branco nas caixas de imagem */
+    text-align: center; /* Centraliza o texto e os conteúdos dentro das caixas */
+}
+
+/* Mantém o estilo da imagem */
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Ajusta o espaçamento entre colunas */
+.col-xs-4 {
+    padding: 0 15px;
+}
