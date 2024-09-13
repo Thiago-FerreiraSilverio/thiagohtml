@@ -13,3 +13,8 @@ function contador(){
     }
 }
 
+function mostrarMensagem(){
+    document.getElementById("success").style.display = "block";
+    document.getElementById("msg").style.display = "block";
+    document.getElementById("msgBold").style.display = "block";
+}
