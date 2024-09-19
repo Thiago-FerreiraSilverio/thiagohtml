@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Tabela</title>
+    <title>Gerar Tabela com JavaScript</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <button onclick="criarTabela()">Gerar Tabela</button>
+    <div id="tabela-container"></div>
+
+    <script>
+        function criarTabela() {
+            const container = document.getElementById('tabela-container');
+
+            // Limpa o conteúdo do container antes de criar uma nova tabela
+            container.innerHTML = "";
+
+            // Cria a tabela
+            const tabela = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Cria a linha de cabeçalho
+            const headerRow = document.createElement('tr');
+            for (let i = 1; i <= 4; i++) {
+                const th = document.createElement('th');
+                th.innerText = 'Cabeçalho ' + i;
+                headerRow.appendChild(th);
+            }
+            thead.appendChild(headerRow);
+
+            // Cria as linhas da tabela
+            for (let i = 1; i <= 10; i++) {
+                const row = document.createElement('tr');
+                for (let j = 1; j <= 4; j++) {
+                    const td = document.createElement('td');
+                    td.innerText = 'Linha ' + i + ', Coluna ' + j;
+                    row.appendChild(td);
+                }
+                tbody.appendChild(row);
+            }
+
+            // Adiciona o cabeçalho e o corpo à tabela
+            tabela.appendChild(thead);
+            tabela.appendChild(tbody);
+
+            // Adiciona a tabela ao container
+            container.appendChild(tabela);
+        }
+    </script>
+
 </body>
 </html>

@@ -5,11 +5,11 @@
     --secundary-color: rgb(248, 150, 2);
     --accent-secundary-color: rgb(245, 188, 3);
     --text-color: #0c0c0c;
-    --executiva-bg: #cce7f5; /* Versão clara para Executiva */
+    --executiva-bg: #f3f3f3cc; /* Versão clara para Executiva */
     --executiva-title: #005980; /* Título com contraste */
-    --premium-bg: #fff7cc; /* Versão clara para Premium */
+    --premium-bg: #f3f3f3cc; /* Versão clara para Premium */
     --premium-title: #996a00; /* Título com contraste */
-    --luxo-bg: #f5cccc; /* Versão clara para Luxo */
+    --luxo-bg: #f3f3f3cc; /* Versão clara para Luxo */
     --luxo-title: #a80000; /* Título com contraste */
 }
 
@@ -127,3 +127,20 @@
     p{
         text-align: justify;
     }
+
+    .btn-veja-mais {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: var(--primary-color);
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-veja-mais:hover {
+        background-color: var(--accent-primary-color);
+    }
+    
