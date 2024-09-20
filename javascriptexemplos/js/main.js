@@ -18,3 +18,38 @@ function mostrarMensagem(){
     document.getElementById("msg").style.display = "block";
     document.getElementById("msgBold").style.display = "block";
 }
+
+function gerarTabela(){
+    let container = document.querySelector("#container")
+    //let paragrafo = document.createElement("p")
+    //paragrafo.innerHTML = "Inserindo texto"
+    //container.appendChild(paragrafo)
+    //criando e elemento table
+    let tabela = document.createElement("table")
+    //Atribuindo o id para a tabela
+    tabela.setAttribute("id", "tab")
+
+
+    cols = ["Nome", "Email", "Cidade", "Telefone"]
+    let linha = document.createElement("tr")
+    for(i = 0; i < cols.length; i++){
+        let th = document.createElement("th")
+        th.innerText = cols[i]
+        linha.appendChild(th)
+    }
+    tabela.appendChild(linha)
+
+    for(i = 0; i < 10; i++){
+        let linha = document.createElement("tr")
+        for (j = 0; j < cols.length; j++){
+            let td = document.createElement("td")
+            td.innerText = "Texto " + j
+            linha.appendChild(td)
+        }
+        tabela.appendChild(linha)
+    }
+
+    
+
+    container.appendChild(tabela)
+}
