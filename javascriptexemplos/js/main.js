@@ -53,3 +53,7 @@ function gerarTabela(){
 
     container.appendChild(tabela)
 }
+
+function formToJason(){
+    let user = {nome: "", email: "", cidade: "", telefone: ""};
+}
