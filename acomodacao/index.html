@@ -11,150 +11,200 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Turismo</title>
+    <title>Acomodações</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-                <div class="navbar-header" id="#navbarsticky">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="index.html"><img class="img-responsive" src="" width="70" height="50" alt=""></a>
+    <header class="header">
+            <nav class="navbar navbar-inverse">
+              <div class="container-fluid">
+                <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20preta.png?token=GHSAT0AAAAAACWNLPRHS3LAEWY26GABE4CWZXUR7YQ" id="logo" alt="logo" />
+                <div class="navbar-header">
+                  <button type="button" id="btn-mobile" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li><a class="navbar-brand" href="pontos-turisticos.html"><h4>Pontos Turísticos</h4></a></li>
-                        <li><a class="navbar-brand" href="acomodacoes.html"><h4>Acomodações</h4></a></li>
-                        <li><a class="navbar-brand" href="refeitorio-piscina.html"><h4>Refeitório e Piscina</h4></a></li>
-                        <li><a class="navbar-brand" href="area-recreativa.html"><h4>Área Recreativa</h4></a></li>
-                        <li><a class="navbar-brand" href="pacotes-promocionais.html"><h4>Pacotes Promocionais</h4></a></li>
-                        <li><a class="navbar-brand" href="fale-conosco.html"><h4>Fale Conosco</h4></a></li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Início</a></li>
+                    <li><a href="#">Pontos Turísticos</a></li>
+                    <li><a href="#">Acomodações</a></li>
+                    <li><a href="#">Refeitório e Piscina</a></li>
+                    <li><a href="#">Área Recriativa</a></li>
+                    <li><a href="#">Pacotes Promocionais</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                  </ul>
+                  <div class="sociais">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-solid fa-map-pin"></i>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+          <div class="apresentacao-acomodacao">
+            <p>
+                Oferecemos acomodações que atendem a diversos perfis de viajantes, com categorias que variam da funcionalidade da Classe Executiva à sofisticação da Classe Luxo. Cada espaço é cuidadosamente projetado para proporcionar conforto e comodidade, garantindo uma experiência única, seja em nossos dormitórios, suítes ou chalés. Independentemente de suas preferências, você encontrará a hospedagem ideal para desfrutar de momentos de descanso e bem-estar, com opções que vão do prático ao luxuoso.
+            </p>
+        </div>
+
+        <div class="container">
+            <!-- Seção Executiva -->
+            <div class="row nivel-executiva">
+                <div class="col-xs-12 text-center">
+                    <h1 class="titulo-executiva">Classe Executiva</h1>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/DormitorioEx.png" alt="Imagem 1" class="img-responsive">
+                        <hr class="separator">
+                        <p>O Dormitório Classe Executiva oferece uma solução confortável e prática para quem busca uma estadia econômica, mas funcional. Perfeito para viajantes a negócios ou turistas que valorizam conforto sem luxos, este dormitório é cuidadosamente projetado para proporcionar descanso com privacidade, além de comodidades modernas como Wi-Fi gratuito e espaços para trabalho. Com camas individuais ou beliches de alta qualidade, você terá um espaço acolhedor e eficiente para suas necessidades de viagem, trabalhando de forma relaxante enquanto aproveita a viagem.</p>
+                        <p>Quantidade Disponivel: 3</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/SuiteEx.png" alt="Imagem 2" class="img-responsive">
+                        <hr class="separator">
+                        <p>A Suíte Classe Executiva foi pensada para o viajante moderno que precisa de um espaço prático, confortável e funcional, seja para descansar ou trabalhar. Ideal para executivos e viajantes a negócios, esta suíte oferece uma combinação perfeita de conforto e eficiência, com uma área de trabalho equipada, conexão Wi-Fi de alta velocidade e um ambiente relaxante para recarregar as energias. Com uma cama espaçosa e ambiente tranquilo, você terá tudo o que precisa para uma estadia produtiva e relaxante conseguindo aproveitar a viagem enquanto trabalha.</p>
+                        <p>Quantidade Disponivel: 1</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/ChaleEx.jpg" alt="Imagem 3" class="img-responsive">
+                        <hr class="separator">
+                        <p>Descubra a combinação perfeita entre simplicidade, conforto e funcionalidade em nossos Chalés Classe Executiva. Ideal para quem busca um refúgio prático e aconchegante em meio à natureza, esses chalés oferecem o ambiente ideal para descansar e se reconectar, sem abrir mão das comodidades modernas. Com um design acolhedor e funcional, nossos chalés são equipados com uma cozinha compacta, sala integrada e um quarto confortável para garantir uma estadia tranquila. Perfeito para quem deseja uma experiência relaxante, mas acessível, com todo o conforto essencial.</p>
+                        <p>Quantidade Disponivel: 5</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="index.html"><img class="img-responsive" src="" alt=""></a>
+        
+            <!-- Seção Premium -->
+            <div class="row nivel-premium">
+                <div class="col-xs-12 text-center">
+                    <h1 class="titulo-premium">Classe Premium</h1>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/DormitorioPr.png" alt="Imagem 1" class="img-responsive">
+                        <hr class="separator">
+                        <p>Experimente um novo nível de conforto com o Dormitório Classe Premium. Perfeito para quem busca mais espaço e sofisticação, mas aprecia a dinâmica de ambientes compartilhados, esse dormitório oferece camas maiores, design moderno e maior privacidade com cabines separadas. Com comodidades de alto padrão, como Wi-Fi premium e produtos de higiene pessoal diferenciados, nossos hóspedes desfrutam de uma experiência mais elevada, sem deixar de lado a interação e a praticidade dos espaços compartilhados.</p>
+                        <p>Quantidade Disponivel: 2</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/SuitePr.png" alt="Imagem 2" class="img-responsive">
+                        <hr class="separator">
+                        <p>Com um toque de sofisticação e conforto elevado, a Suíte Classe Premium oferece uma experiência aprimorada para aqueles que buscam mais espaço e luxo em sua estadia. Ideal para hóspedes que apreciam um design elegante e comodidades de alto padrão, esta suíte inclui uma sala de estar separada, cama king-size e um banheiro de luxo com banheira e produtos premium. Perfeita para casais ou viajantes exigentes, esta suíte proporciona um refúgio sereno e exclusivo, onde cada detalhe foi pensado para oferecer uma experiência superior.</p>
+                        <p>Quantidade Disponivel: 1</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/ChalePr.png" alt="Imagem 3" class="img-responsive">
+                        <hr class="separator">
+                        <p>Eleve sua experiência de hospedagem com nossos Chalés Classe Premium. Combinando sofisticação e estilo, esses chalés são perfeitos para quem busca um refúgio na natureza com toques de luxo. Desfrute de espaços amplos e cuidadosamente projetados, com sala de estar separada, lareira aconchegante e uma cozinha totalmente equipada. Aqui, você poderá relaxar em uma cama king-size com lençóis premium, enquanto se deixa envolver pelo conforto e elegância do ambiente. Ideal para casais, famílias ou viajantes que buscam uma estadia mais refinada.</p>
+                        <p>Quantidade Disponivel: 4</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </div>
-    <div class="container">
-        <!-- Seção Executiva -->
-        <div class="row nivel-executiva">
-            <div class="col-xs-12 text-center">
-                <h1 class="titulo-executiva">Classe Executiva</h1>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/DormitorioEx.png" alt="Imagem 1" class="img-responsive">
-                    <hr class="separator">
-                    <p>O Dormitório Classe Executiva oferece uma solução confortável e prática para quem busca uma estadia econômica, mas funcional. Perfeito para viajantes a negócios ou turistas que valorizam conforto sem luxos, este dormitório é cuidadosamente projetado para proporcionar descanso com privacidade, além de comodidades modernas como Wi-Fi gratuito e espaços para trabalho. Com camas individuais ou beliches de alta qualidade, você terá um espaço acolhedor e eficiente para suas necessidades de viagem, trabalhando de forma relaxante enquanto aproveita a viagem.</p>
-                    <p>Quantidade Disponivel: 3</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
+        
+            <!-- Seção Luxo -->
+            <div class="row nivel-luxo">
+                <div class="col-xs-12 text-center">
+                    <h1 class="titulo-luxo">Classe Luxo</h1>
                 </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/SuiteEx.png" alt="Imagem 2" class="img-responsive">
-                    <hr class="separator">
-                    <p>A Suíte Classe Executiva foi pensada para o viajante moderno que precisa de um espaço prático, confortável e funcional, seja para descansar ou trabalhar. Ideal para executivos e viajantes a negócios, esta suíte oferece uma combinação perfeita de conforto e eficiência, com uma área de trabalho equipada, conexão Wi-Fi de alta velocidade e um ambiente relaxante para recarregar as energias. Com uma cama espaçosa e ambiente tranquilo, você terá tudo o que precisa para uma estadia produtiva e relaxante conseguindo aproveitar a viagem enquanto trabalha.</p>
-                    <p>Quantidade Disponivel: 1</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/DormitorioLx.png" alt="Imagem 1" class="img-responsive">
+                        <hr class="separator">
+                        <p>Para quem deseja uma experiência única de luxo em um ambiente compartilhado, o Dormitório Classe Luxo proporciona o melhor dos dois mundos. Com cápsulas individuais que garantem total privacidade e comodidades exclusivas, este dormitório redefine o conceito de hospedagem compartilhada. Cada cápsula é equipada com cama queen-size, automação completa e entretenimento personalizado, oferecendo o máximo em conforto e tecnologia. Os banheiros luxuosos e os serviços personalizados  completam a experiência  tornando a  sua estadia memorável e exclusiva.</p>
+                        <p>Quantidade Disponivel: 1</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
                 </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/ChaleEx.jpg" alt="Imagem 3" class="img-responsive">
-                    <hr class="separator">
-                    <p>Descubra a combinação perfeita entre simplicidade, conforto e funcionalidade em nossos Chalés Classe Executiva. Ideal para quem busca um refúgio prático e aconchegante em meio à natureza, esses chalés oferecem o ambiente ideal para descansar e se reconectar, sem abrir mão das comodidades modernas. Com um design acolhedor e funcional, nossos chalés são equipados com uma cozinha compacta, sala integrada e um quarto confortável para garantir uma estadia tranquila. Perfeito para quem deseja uma experiência relaxante, mas acessível, com todo o conforto essencial.</p>
-                    <p>Quantidade Disponivel: 5</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/SuiteLx.png" alt="Imagem 2" class="img-responsive">
+                        <hr class="separator">
+                        <p>Para uma experiência incomparável de requinte e exclusividade, a Suíte Classe Luxo oferece o máximo em conforto e luxo. Este ambiente foi cuidadosamente desenhado para proporcionar uma estadia de altíssimo padrão, com uma combinação única de design sofisticado, espaços amplos e serviços personalizados. Com várias áreas, incluindo sala de estar, sala de jantar e um banheiro opulento, a suíte é o refúgio perfeito para quem busca uma experiência de alto luxo. A privacidade e o conforto são complementados por um atendimento exclusivo e comodidades que fazem esta suíte uma joia.</p>
+                        <p>Quantidade Disponivel: 1</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
+                </div>
+        
+                <div class="col-xs-4">
+                    <div class="box">
+                        <img src="img/ChaleLx.jpg" alt="Imagem 3" class="img-responsive">
+                        <hr class="separator">
+                        <p>Para uma experiência de hospedagem incomparável, nossos Chalés Classe Luxo oferecem um verdadeiro oásis de exclusividade e sofisticação. Esses chalés são projetados para proporcionar o máximo de conforto e privacidade, com ambientes espaçosos, decoração luxuosa e serviços personalizados. Desfrute de uma estadia única em um chalé com vários cômodos, sala de estar com lareira, cozinha gourmet e um deck privativo com piscina aquecida ou jacuzzi. Perfeito para quem busca um refúgio de alto padrão em meio à natureza, com todo o luxo e comodidade que você merece.</p>
+                        <p>Quantidade Disponivel: 1</p>
+                        <a href="#" class="btn-veja-mais">Veja Mais</a>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <!-- Seção Premium -->
-        <div class="row nivel-premium">
-            <div class="col-xs-12 text-center">
-                <h1 class="titulo-premium">Classe Premium</h1>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/DormitorioPr.png" alt="Imagem 1" class="img-responsive">
-                    <hr class="separator">
-                    <p>Experimente um novo nível de conforto com o Dormitório Classe Premium. Perfeito para quem busca mais espaço e sofisticação, mas aprecia a dinâmica de ambientes compartilhados, esse dormitório oferece camas maiores, design moderno e maior privacidade com cabines separadas. Com comodidades de alto padrão, como Wi-Fi premium e produtos de higiene pessoal diferenciados, nossos hóspedes desfrutam de uma experiência mais elevada, sem deixar de lado a interação e a praticidade dos espaços compartilhados.</p>
-                    <p>Quantidade Disponivel: 2</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
+
+        <footer class="footer">
+                <div class="container">
+                  <img src="https://raw.githubusercontent.com/matheushssilvaa/engenharia-software/refs/heads/main/img/logo%20png%20branca.png?token=GHSAT0AAAAAACWNLPRGRLXBLYMKK4RGJGGYZXUR7CQ" class="logo-footer" alt="logo-footer" />
+                  <div class="row">
+                    <div class="col-md-4">
+                      <h2>Quem Somos</h2>
+                      <p class="description-footer">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                        Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of
+                        the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the
+                        cites of the word in classical literature, discovered the undoubtable source.</p>
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Menu</h2>
+                      <p>Pontos Turísticos</p>
+                      <p>Acomodações</p>
+                      <p>Refeitório e Piscina</p>
+                      <p>Área Recreativa</p>
+                      <p>Pacotes Promocionais</p>
+                      <p>Fale Conosco</p>
+                      <p>Quem somos</p>
+                    </div>
+                    <div class="col-md-4">
+                      <h2>Endereço</h2>
+                      <p>Localidade: Gramado - RS</p>
+                      <p>Telefone: (XX) XXXXX-XXXX</p>
+                      <p>Email: contato@turistica.com.br</p>
+                      <h3>Newletter</h3>
+                      <input type="email" name="email" id="newsletter" placeholder="Seu email aqui..." />
+                      <input type="submit" value="Enviar" id="submit-newsletter" />
+                      <div class="sociais-footer">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-solid fa-map-pin"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <span>© Turistica - todos os direitos reservados 2024</span>
                 </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/SuitePr.png" alt="Imagem 2" class="img-responsive">
-                    <hr class="separator">
-                    <p>Com um toque de sofisticação e conforto elevado, a Suíte Classe Premium oferece uma experiência aprimorada para aqueles que buscam mais espaço e luxo em sua estadia. Ideal para hóspedes que apreciam um design elegante e comodidades de alto padrão, esta suíte inclui uma sala de estar separada, cama king-size e um banheiro de luxo com banheira e produtos premium. Perfeita para casais ou viajantes exigentes, esta suíte proporciona um refúgio sereno e exclusivo, onde cada detalhe foi pensado para oferecer uma experiência superior.</p>
-                    <p>Quantidade Disponivel: 1</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
-                </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/ChalePr.png" alt="Imagem 3" class="img-responsive">
-                    <hr class="separator">
-                    <p>Eleve sua experiência de hospedagem com nossos Chalés Classe Premium. Combinando sofisticação e estilo, esses chalés são perfeitos para quem busca um refúgio na natureza com toques de luxo. Desfrute de espaços amplos e cuidadosamente projetados, com sala de estar separada, lareira aconchegante e uma cozinha totalmente equipada. Aqui, você poderá relaxar em uma cama king-size com lençóis premium, enquanto se deixa envolver pelo conforto e elegância do ambiente. Ideal para casais, famílias ou viajantes que buscam uma estadia mais refinada.</p>
-                    <p>Quantidade Disponivel: 4</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Seção Luxo -->
-        <div class="row nivel-luxo">
-            <div class="col-xs-12 text-center">
-                <h1 class="titulo-luxo">Classe Luxo</h1>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/DormitorioLx.png" alt="Imagem 1" class="img-responsive">
-                    <hr class="separator">
-                    <p>Para quem deseja uma experiência única de luxo em um ambiente compartilhado, o Dormitório Classe Luxo proporciona o melhor dos dois mundos. Com cápsulas individuais que garantem total privacidade e comodidades exclusivas, este dormitório redefine o conceito de hospedagem compartilhada. Cada cápsula é equipada com cama queen-size, automação completa e entretenimento personalizado, oferecendo o máximo em conforto e tecnologia. Os banheiros luxuosos e os serviços personalizados  completam a experiência  tornando a  sua estadia memorável e exclusiva.</p>
-                    <p>Quantidade Disponivel: 1</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
-                </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/SuiteLx.png" alt="Imagem 2" class="img-responsive">
-                    <hr class="separator">
-                    <p>Para uma experiência incomparável de requinte e exclusividade, a Suíte Classe Luxo oferece o máximo em conforto e luxo. Este ambiente foi cuidadosamente desenhado para proporcionar uma estadia de altíssimo padrão, com uma combinação única de design sofisticado, espaços amplos e serviços personalizados. Com várias áreas, incluindo sala de estar, sala de jantar e um banheiro opulento, a suíte é o refúgio perfeito para quem busca uma experiência de alto luxo. A privacidade e o conforto são complementados por um atendimento exclusivo e comodidades que fazem esta suíte uma joia.</p>
-                    <p>Quantidade Disponivel: 1</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
-                </div>
-            </div>
-    
-            <div class="col-xs-4">
-                <div class="box">
-                    <img src="img/ChaleLx.jpg" alt="Imagem 3" class="img-responsive">
-                    <hr class="separator">
-                    <p>Para uma experiência de hospedagem incomparável, nossos Chalés Classe Luxo oferecem um verdadeiro oásis de exclusividade e sofisticação. Esses chalés são projetados para proporcionar o máximo de conforto e privacidade, com ambientes espaçosos, decoração luxuosa e serviços personalizados. Desfrute de uma estadia única em um chalé com vários cômodos, sala de estar com lareira, cozinha gourmet e um deck privativo com piscina aquecida ou jacuzzi. Perfeito para quem busca um refúgio de alto padrão em meio à natureza, com todo o luxo e comodidade que você merece.</p>
-                    <p>Quantidade Disponivel: 1</p>
-                    <a href="#" class="btn-veja-mais">Veja Mais</a>
-                </div>
-            </div>
-        </div>
-    </div>
+              </footer>
 </body>
 </html>

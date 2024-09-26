@@ -1,33 +1,271 @@
 :root {
-    --bg-default: #f3f3f3cc;
-    --primary-color: rgb(0, 133, 185);
-    --accent-primary-color: rgb(0, 169, 236);
-    --secundary-color: rgb(248, 150, 2);
-    --accent-secundary-color: rgb(245, 188, 3);
-    --text-color: #0c0c0c;
-    --executiva-bg: #f3f3f3cc; /* Versão clara para Executiva */
-    --executiva-title: #005980; /* Título com contraste */
-    --premium-bg: #f3f3f3cc; /* Versão clara para Premium */
-    --premium-title: #996a00; /* Título com contraste */
-    --luxo-bg: #f3f3f3cc; /* Versão clara para Luxo */
-    --luxo-title: #a80000; /* Título com contraste */
-}
-
-/* Estilos para as diferentes classes de acomodação */
+      --bg-default: #f3f3f3cc;
+      --primary-color: rgb(0, 113, 158);
+      --accent-primary-color: rgb(0, 169, 236);
+      --secundary-color: rgb(248, 150, 2);
+      --accent-secundary-color: rgb(245, 188, 3);
+      --text-color: #0c0c0c;
+      --executiva-title: #005980;
+      --premium-title: #996a00;
+      --luxo-title: #a80000;
+    }
+    
+    .container-fluid {
+      background-color: var(--bg-default);
+      color: var(--primary-color);
+      border: 0;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    
+    header {
+      -webkit-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+      box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
+    }
+    
+    .navbar {
+      background-color: #303030cc;
+    }
+    
+    .navbar-brand {
+      float: left;
+      height: 50px;
+      padding: 9px 9px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+    
+    #logo {
+      width: 10%;
+      padding: 10px;
+    }
+    
+    .navbar-inverse {
+      background-color: var(--bg-default);
+      border-color: transparent;
+    }
+    
+    .navbar-inverse .navbar-brand {
+      color: var(--text-color);
+    }
+    
+    .navbar-header {
+      display: none;
+    }
+    
+    .navbar-inverse .navbar-brand:hover {
+      color: #27272775;
+      transition: 0.5s;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a {
+      color: #000;
+    }
+    
+    .navbar-inverse .navbar-nav>li>a:hover {
+      color: #525252;
+    }
+    
+    div#logo-header {
+      width: 10%;
+    }
+    
+    .footer {
+      padding: 50px 0 50px 0;
+      margin-bottom: 25px;
+      background-color: rgb(0, 34, 48);
+      color: #fff;
+    }
+    
+    #newsletter {
+      color: var(--primary-color);
+      padding: 5px;
+    }
+    
+    #submit-newsletter {
+      color: var(--primary-color);
+      padding: 5px;
+    }
+    
+    .container-logo-footer {
+      padding: 25px 15px 0px 0px;
+    }
+    
+    .container-logo-footer>img {
+      width: 10%;
+    }
+    
+    .description-footer {
+      padding-right: 50px;
+      text-align: justify;
+    }
+    
+    #logo-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    #logo-header>img {
+      padding: 10px;
+      width: 10%;
+    }
+    
+    .navbar-header {
+      width: 75%;
+    }
+    
+    .search {
+      width: 50%;
+    }
+    
+    .search>input {
+      width: 100%;
+    }
+    
+    .sociais>i {
+      font-size: 20px;
+      padding-right: 10px;
+    }
+    
+    .sociais {
+      display: flex;
+      align-items: center;
+      height: 50px;
+    }
+    
+    div#logo-header {
+      width: 100%;
+    }
+    
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:focus,
+    .navbar-inverse .navbar-nav>.active>a:hover {
+      color: #fff;
+      background-color: var(--primary-color);
+    }
+    
+    .sociais-footer > i {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 15px;
+      padding: 5px;
+    }
+    
+    .logo-footer {
+      width: 10%;
+    }
+    
+    @media screen and (max-width: 1150px) {
+      .sociais {
+        display: none;
+      }
+    
+      .container-fluid {
+        display: block;
+      }
+    
+      #logo {
+        width: 25%;
+      }
+    
+      .navbar-header {
+        display: inline-flex;
+        align-items: center;
+        justify-content: end;
+      }
+    
+      button.navbar-toggle {
+        border: none;
+        color: #000;
+      }
+    
+      button.navbar-toggle:hover {
+        border: none;
+        background-color: rgba(0, 0, 0, 0)
+      }
+    
+      .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: var(--primary-color);
+      }
+    
+      #btn-mobile:hover{
+        background-color: transparent;
+      }
+    
+      #btn-mobile {
+        background-color: #f8f8f8;
+      }
+    
+      footer {
+        text-align: center;
+      }
+    
+      .description-footer {
+        padding-right: 0;
+        text-align: center;
+      }
+    
+      .logo-footer {
+        width: 35%;
+      }
+    }
+    .apresentacao-acomodacao {
+        background-color: var(--bg-default);
+        /* Fundo neutro */
+        padding: 20px 15px;
+        /* Espaçamento interno */
+        margin: 40px auto 40px auto;
+        /* Espaçamento superior (40px) e inferior (40px) */
+        max-width: 1200px;
+        /* Largura máxima */
+        text-align: center;
+        /* Centraliza o texto */
+        font-size: 18px;
+        /* Tamanho da fonte */
+        line-height: 1.6;
+        /* Altura das linhas */
+        z-index: 1;
+        /* Garante que o texto fique acima de outros elementos */
+        position: relative;
+        /* Para não interferir no restante */
+    }
+    
+    .apresentacao-acomodacao p {
+        margin: 0;
+        /* Remove margens internas do parágrafo */
+        color: var(--text-color);
+        /* Cor do texto */
+    }
+    
+    section {
+        clear: both;
+        /* Garante que as seções comecem após o conteúdo da apresentação */
+        margin-top: 60px;
+        /* Espaçamento entre a apresentação e o conteúdo subsequente */
+    }
+    
+    /* Estilos para as diferentes classes de acomodação */
 .nivel-executiva {
-    background-color: var(--executiva-bg); /* Cor de fundo para classe executiva */
+    background-color: var(--bg-default); /* Cor de fundo para classe executiva */
     padding: 20px 0;
     margin-bottom: 20px;
 }
 
 .nivel-premium {
-    background-color: var(--premium-bg); /* Cor de fundo para classe premium */
+    background-color: var(--bg-default); /* Cor de fundo para classe premium */
     padding: 20px 0;
     margin-bottom: 20px;
 }
 
 .nivel-luxo {
-    background-color: var(--luxo-bg); /* Cor de fundo para classe luxo */
+    background-color: var(--bg-default); /* Cor de fundo para classe luxo */
     padding: 20px 0;
     margin-bottom: 20px;
 }
@@ -71,76 +309,22 @@
     padding: 0 15px;
 }
 
-.container-fluid {
-     background-color: var(--bg-default);
-     color: #000;
-     border: 0;
-     display: flex;
-     justify-content: center;
-    }
-    
-    header {
-     -webkit-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
-     -moz-box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
-     box-shadow: -2px 3px 28px -10px rgba(0, 0, 0, 0.75);
-    }
-    
-    .navbar-inverse {
-     background-color: var(--bg-default);
-     border-color: transparent;
-    }
-    
-    .navbar-inverse .navbar-brand {
-     color: var(--text-color);
-    }
-    
-    .navbar-header {
-     display: inline-flex;
-    }
-    
-    .navbar-inverse .navbar-brand:hover {
-     color: #27272775;
-     transition: 0.5s;
-    }
-    
-    .container-fluid {
-     height: 85px;
-    }
-    
-    .btn-whatsapp {
-     padding: 15px;
-     background-color: var(--primary-color);
-     border: 0;
-     outline: 0;
-     color: #fff;
-     font-weight: 500;
-     margin: 15px;
-     font-size: 15px;
-     border-radius: 15px;
-    }
-    
-    #wp {
-     margin: 5px;
-     font-size: 15px;
-    }
-    
-    p{
-        text-align: justify;
-    }
+p{
+    text-align: justify;
+}
 
-    .btn-veja-mais {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: var(--primary-color);
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-        transition: background-color 0.3s ease;
-    }
-    
-    .btn-veja-mais:hover {
-        background-color: var(--accent-primary-color);
-    }
-    
+.btn-veja-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-veja-mais:hover {
+    background-color: var(--accent-primary-color);
+}
