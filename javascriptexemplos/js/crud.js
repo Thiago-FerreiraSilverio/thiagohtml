@@ -1,10 +1,16 @@
 //pegando os dados dos usuarios
 let usuarios = users;
+//Define o id de um novo usuario ao inserido na lista
+let novoid = usuarios.length + 1;
 
 //Gera HTML da tabela de usuarios
 function gerarTabelaUsuarios(){
 
     let tab = document.getElementById("tab");
+
+    if(tab){
+        tab.remove();
+    }
 
     //Criando Tabela
     let tabela = document.createElement("table");
@@ -97,18 +103,93 @@ function editarLinha(button){
     console.log(user);
     jsonToForm(user);
 
+    var section = document.querySelector(".container")
+    section.scrollIntoView({behavio: 'smooth'});
 
+}
+
+//atualiza a tabela e a coluna do crud
+
+function atualizaTabela(){
+    //limpa os inputs do form
+    limparFormulario();
+    //chama a função que gera a tabela novamente quando o usuario é atualizado 
+    gerarTabelaUsuarios();
+    // chama a função adicionar coluna
+    adicionarColunaCRUD();
 }
 
 //Transfere os dados da linha da tabela para o form
 function jsonToForm(user){
     for(const key in user){
-        const input = document.querySelector(`[nome="${key}"]`);
+        const input = document.querySelector(`[name="${key}"]`);
         if(input){
             input.value = user[key];
         }
     }
 }
 
+//transfere os dados do formulario para um user json
+//transfere o user para o aary de usuarios
+//valida os dados da tabela
+function formToJSON(event){
+    //Não deixa executar o submit do form
+    event.preventDefault();
+
+    let user = {id: "", nome: "", email: "", cidade: "", telefone: ""};
+
+    //Seleciona todos os inputs do form
+    const inputs =  document.querySelectorAll('input');
+
+    //Pega os valores dos inputs e transfere para o objeto json user
+    inputs.forEach(input => {
+        user[input.name] = input.value;
+    });
+
+    if(user.id!= ""){
+
+        let index = usuarios.findIndex(usuario => usuario.id == user.id);
+
+        if(index !== -1){
+            usuarios[index] = user;
+        }
+    } else {
+        inserirUsuario(user);
+    }
+
+
+    console.log(user);
+
+    atualizaTabela();
+
+
+}
+
+//isere o usuario no arry json
+function inserirUsuario(user){
+    user.id = novoid.toString();
+    novoid += 1;
+    usuarios.push(user);
+}
+
+function excluirUsuarios(button){
+    //Pega a linha em que o botão foi clicado
+    const linha = button.closest('tr');
+    //pega todas colunas da linha
+    const coluna = linha.getElementsByTagName('td');
+    //pega o id do usuario
+    const userId = coluna[0].textContent;
+    //Percorre o arry de usuarios para encontrar o usuario pelo id
+    const index = usuarios.findIndex(user => user.id === userId);
+    console.log("Excluindo: " + index);
+    
+    if (index !== -1){
+        usuarios.splice(index, 1);
+        atualizaTabela();
+        console.log(`Usuario com id ${userId} excluido com sucesso.`);
+    } else{
+        console.log(`Usuario com id ${userId} não encontrado.`);
+    }
+}
 
 
