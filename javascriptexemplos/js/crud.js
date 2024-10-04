@@ -64,7 +64,7 @@ function adicionarColunaCRUD(){
             if(btn == "Editar"){
                 botao.setAttribute("onclick", "editarLinha(this)")
             } else{
-                botao.setAttribute("onclick", "excluirUsuarios(this)")
+                botao.setAttribute("onclick", "excluirUsuario(this)")
             }
             botao.textContent = btn;
             novaCelula.appendChild(botao);
@@ -172,7 +172,7 @@ function inserirUsuario(user){
     usuarios.push(user);
 }
 
-function excluirUsuarios(button){
+function excluirUsuario(button){
     //Pega a linha em que o botão foi clicado
     const linha = button.closest('tr');
     //pega todas colunas da linha
