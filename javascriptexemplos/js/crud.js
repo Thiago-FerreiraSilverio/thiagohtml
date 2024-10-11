@@ -56,7 +56,7 @@ function adicionarColunaCRUD(){
     thead.rows[0].appendChild(novaCelulaCabecalho);
 
     //Cria os botões e as linhas da tabela
-    for(i = 0; 1 < tbody.rows.length; i++){
+    for(i = 0; i < tbody.rows.length; i++){
         let novaCelula = tbody.rows[i].insertCell(-1);
 
         btns.forEach(btn => {
@@ -127,6 +127,7 @@ function jsonToForm(user){
             input.value = user[key];
         }
     }
+    mensagem("Usuario atualizado");
 }
 
 //transfere os dados do formulario para um user json
@@ -170,6 +171,7 @@ function inserirUsuario(user){
     user.id = novoid.toString();
     novoid += 1;
     usuarios.push(user);
+    mensagem("Usuário criado com sucesso")
 }
 
 function excluirUsuario(button){
@@ -187,9 +189,15 @@ function excluirUsuario(button){
         usuarios.splice(index, 1);
         atualizaTabela();
         console.log(`Usuario com id ${userId} excluido com sucesso.`);
-    } else{
+        mensagem("Usuário excuido");
+    } else {
         console.log(`Usuario com id ${userId} não encontrado.`);
     }
+}
+
+function mensagem(msg) {
+    ms = document.getElementById("divmsg");
+    document.getElementById("msg").textContent = msg;
 }
 
 
